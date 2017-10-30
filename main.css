@@ -1,0 +1,85 @@
+h1{
+   text-align: center;
+   font-size: 32px;
+  font-family: 'Lobster', cursive;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid: #000000;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f93939;
+    color :#0104a3;
+}
+th {
+    background-color: #6800e8;
+    color: #ffffff;
+    font-family: 'Slabo 37px', serif;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+
+caption {
+  color:#000000;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Lobster Two', cursive;
+}
+
+thead {
+    background-color: #0004f2;
+}
+
+tbody {
+  font-family: 'Slabo 37px', serif;
+}
+
+tr {
+
+}
+
+
+th {
+  background-color: #0004f2;
+  color: #ffffff;
+}
+
+    @media (max-width: 600px) {
+      table {
+        width: 100%;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        border: 1px solid #aaaaaa;
+        display: block;
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+
+      td {
+        display: block;
+        text-align: right;
+      }
+
+      td:before {
+        content: attr(aria-label);
+        float: left;
+        font-weight: bold;
+      }
+    }
